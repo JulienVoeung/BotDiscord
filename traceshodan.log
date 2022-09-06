@@ -1,0 +1,296 @@
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+INFO:root:Parse sur le fichier de configuration JSON
+DEBUG:discord.client:on_ready has successfully been registered as an event
+DEBUG:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me has received {'id': '988915244409688074', 'username': 'BoBOT', 'avatar': 'f6047ed12749496a7ddf04e3ef6cc5e2', 'avatar_decoration': None, 'discriminator': '7447', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'pronouns': '', 'locale': 'en-US', 'mfa_enabled': False, 'email': None, 'verified': True}
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+DEBUG:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-xmtj",{"micros":0.0}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_send
+DEBUG:discord.client:Dispatching event socket_raw_send
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'BoBOT', 'mfa_enabled': False, 'id': '988915244409688074', 'flags': 0, 'email': None, 'discriminator': '7447', 'bot': True, 'avatar': 'f6047ed12749496a7ddf04e3ef6cc5e2'}, 'session_type': 'normal', 'session_id': '3914156cb7bc8088ea116e114ad679ed', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '986278767473336370'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['rotterdam', 'milan', 'madrid', 'stockholm', 'bucharest'], 'application': {'id': '988915244409688074', 'flags': 827392}, '_trace': ['["gateway-prd-main-xmtj",{"micros":84112,"calls":["discord-sessions-green-prd-2-151",{"micros":80738,"calls":["start_session",{"micros":64801,"calls":["discord-api-57d6994d44-nknqt",{"micros":60952,"calls":["get_user",{"micros":11583},"add_authorized_ip",{"micros":3363},"get_guilds",{"micros":11626},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-xmtj",{"micros":84112,"calls":["discord-sessions-green-prd-2-151",{"micros":80738,"calls":["start_session",{"micros":64801,"calls":["discord-api-57d6994d44-nknqt",{"micros":60952,"calls":["get_user",{"micros":11583},"add_authorized_ip",{"micros":3363},"get_guilds",{"micros":11626},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}] (Session ID: 3914156cb7bc8088ea116e114ad679ed).
+DEBUG:discord.client:Dispatching event connect
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'hub_type': None, 'premium_progress_bar_enabled': False, 'emojis': [], 'splash': None, 'region': 'deprecated', 'name': 'TP 4 - Bot Discord', 'large': False, 'max_video_channel_users': 25, 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': 'nBEfyXFJWTo'}, 'metadata': {'omitted': False, 'hash': 'uY1MgSfZ9PI'}, 'channels': {'omitted': False, 'hash': 'xMB6Zi7J3MI'}}, 'lazy': True, 'joined_at': '2022-06-21T21:31:29.660000+00:00', 'roles': [{'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions_new': '1071698660929', 'permissions': 104320577, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '986278767473336370', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}, {'unicode_emoji': None, 'tags': {'bot_id': '988915244409688074'}, 'position': 1, 'permissions_new': '8', 'permissions': 8, 'name': 'BoBOT', 'mentionable': False, 'managed': True, 'id': '988919111901929566', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}], 'icon': 'b5ee8db378269e5da8747174ac4878ef', 'public_updates_channel_id': None, 'premium_subscription_count': 0, 'features': [], 'unavailable': False, 'system_channel_flags': 0, 'default_message_notifications': 0, 'application_command_counts': {}, 'presences': [], 'mfa_level': 0, 'nsfw': False, 'premium_tier': 0, 'afk_timeout': 300, 'preferred_locale': 'en-US', 'explicit_content_filter': 0, 'voice_states': [], 'verification_level': 0, 'threads': [], 'max_members': 500000, 'owner_id': '426456090574848002', 'members': [{'user': {'username': 'BoBOT', 'public_flags': 0, 'id': '988915244409688074', 'discriminator': '7447', 'bot': True, 'avatar': 'f6047ed12749496a7ddf04e3ef6cc5e2'}, 'roles': ['988919111901929566'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2022-06-21T21:31:29.660000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}], 'rules_channel_id': None, 'vanity_url_code': None, 'stage_instances': [], 'id': '986278767473336370', 'description': None, 'guild_scheduled_events': [], 'stickers': [], 'system_channel_id': '986278767473336373', 'member_count': 2, 'afk_channel_id': None, 'nsfw_level': 0, 'embedded_activities': [], 'application_id': None, 'banner': None, 'discovery_splash': None, 'channels': [{'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '986278767473336371', 'flags': 0}, {'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '986278767473336372', 'flags': 0}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '986278767473336371', 'name': 'general', 'last_message_id': '989590393702219796', 'id': '986278767473336373', 'flags': 0}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '986278767473336372', 'name': 'General', 'last_message_id': None, 'id': '986278767473336374', 'flags': 0, 'bitrate': 64000}]}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event guild_available
+DEBUG:discord.client:Dispatching event ready
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 3, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2022-06-23T19:15:04.198000+00:00', 'referenced_message': None, 'pinned': False, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['988919111901929566'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2022-06-21T21:31:29.660000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}, 'id': '989609555963023422', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'BoBOT is connected ! Tape **!help** for more informations', 'components': [], 'channel_id': '986278767473336373', 'author': {'username': 'BoBOT', 'public_flags': 0, 'id': '988915244409688074', 'discriminator': '7447', 'bot': True, 'avatar_decoration': None, 'avatar': 'f6047ed12749496a7ddf04e3ef6cc5e2'}, 'attachments': [], 'guild_id': '986278767473336370'}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event message
+DEBUG:discord.http:POST https://discord.com/api/v7/channels/986278767473336373/messages with {"content":"BoBOT is connected ! Tape **!help** for more informations"} has returned 200
+DEBUG:discord.http:POST https://discord.com/api/v7/channels/986278767473336373/messages has received {'id': '989609555963023422', 'type': 0, 'content': 'BoBOT is connected ! Tape **!help** for more informations', 'channel_id': '986278767473336373', 'author': {'id': '988915244409688074', 'username': 'BoBOT', 'avatar': 'f6047ed12749496a7ddf04e3ef6cc5e2', 'avatar_decoration': None, 'discriminator': '7447', 'public_flags': 0, 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2022-06-23T19:15:04.198000+00:00', 'edited_timestamp': None, 'flags': 0, 'components': [], 'referenced_message': None}
+INFO:root:BOT is connected
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 3.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 3.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 3.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.client:Received signal to terminate bot and event loop.
+INFO:discord.client:Cleaning up tasks.
+INFO:discord.client:Cleaning up after 1 tasks.
+INFO:discord.client:All tasks finished cancelling.
+INFO:discord.client:Closing the event loop.
+INFO:root:Lancement du BOT
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+INFO:root:Parse sur le fichier de configuration JSON
+DEBUG:discord.client:on_ready has successfully been registered as an event
+DEBUG:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/users/@me has received {'id': '988915244409688074', 'username': 'BoBOT', 'avatar': 'f6047ed12749496a7ddf04e3ef6cc5e2', 'avatar_decoration': None, 'discriminator': '7447', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'pronouns': '', 'locale': 'en-US', 'mfa_enabled': False, 'email': None, 'verified': True}
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway with None has returned 200
+DEBUG:discord.http:GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+DEBUG:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-j960",{"micros":0.0}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_send
+DEBUG:discord.client:Dispatching event socket_raw_send
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'BoBOT', 'mfa_enabled': False, 'id': '988915244409688074', 'flags': 0, 'email': None, 'discriminator': '7447', 'bot': True, 'avatar': 'f6047ed12749496a7ddf04e3ef6cc5e2'}, 'session_type': 'normal', 'session_id': 'f345caa3ad5fc90c25a2b1616a98bda0', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '986278767473336370'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['rotterdam', 'milan', 'madrid', 'stockholm', 'bucharest'], 'application': {'id': '988915244409688074', 'flags': 827392}, '_trace': ['["gateway-prd-main-j960",{"micros":125189,"calls":["discord-sessions-green-prd-2-111",{"micros":122255,"calls":["start_session",{"micros":93028,"calls":["discord-api-57d6994d44-649pf",{"micros":86946,"calls":["get_user",{"micros":12447},"add_authorized_ip",{"micros":5270},"get_guilds",{"micros":15524},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}]']}}
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-j960",{"micros":125189,"calls":["discord-sessions-green-prd-2-111",{"micros":122255,"calls":["start_session",{"micros":93028,"calls":["discord-api-57d6994d44-649pf",{"micros":86946,"calls":["get_user",{"micros":12447},"add_authorized_ip",{"micros":5270},"get_guilds",{"micros":15524},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: f345caa3ad5fc90c25a2b1616a98bda0).
+DEBUG:discord.client:Dispatching event connect
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'premium_progress_bar_enabled': False, 'public_updates_channel_id': None, 'mfa_level': 0, 'max_video_channel_users': 25, 'nsfw': False, 'name': 'TP 4 - Bot Discord', 'verification_level': 0, 'stage_instances': [], 'large': False, 'roles': [{'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions_new': '1071698660929', 'permissions': 104320577, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '986278767473336370', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}, {'unicode_emoji': None, 'tags': {'bot_id': '988915244409688074'}, 'position': 1, 'permissions_new': '8', 'permissions': 8, 'name': 'BoBOT', 'mentionable': False, 'managed': True, 'id': '988919111901929566', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}], 'default_message_notifications': 0, 'premium_subscription_count': 0, 'afk_channel_id': None, 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': 'nBEfyXFJWTo'}, 'metadata': {'omitted': False, 'hash': 'uY1MgSfZ9PI'}, 'channels': {'omitted': False, 'hash': 'xMB6Zi7J3MI'}}, 'owner_id': '426456090574848002', 'application_command_counts': {}, 'splash': None, 'application_id': None, 'features': [], 'joined_at': '2022-06-21T21:31:29.660000+00:00', 'system_channel_id': '986278767473336373', 'preferred_locale': 'en-US', 'banner': None, 'hub_type': None, 'unavailable': False, 'emojis': [], 'threads': [], 'rules_channel_id': None, 'region': 'deprecated', 'max_members': 500000, 'vanity_url_code': None, 'lazy': True, 'guild_scheduled_events': [], 'members': [{'user': {'username': 'BoBOT', 'public_flags': 0, 'id': '988915244409688074', 'discriminator': '7447', 'bot': True, 'avatar': 'f6047ed12749496a7ddf04e3ef6cc5e2'}, 'roles': ['988919111901929566'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2022-06-21T21:31:29.660000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}], 'icon': 'b5ee8db378269e5da8747174ac4878ef', 'afk_timeout': 300, 'id': '986278767473336370', 'embedded_activities': [], 'description': None, 'voice_states': [], 'member_count': 2, 'discovery_splash': None, 'nsfw_level': 0, 'channels': [{'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '986278767473336371', 'flags': 0}, {'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '986278767473336372', 'flags': 0}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '986278767473336371', 'name': 'general', 'last_message_id': '989609555963023422', 'id': '986278767473336373', 'flags': 0}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '986278767473336372', 'name': 'General', 'last_message_id': None, 'id': '986278767473336374', 'flags': 0, 'bitrate': 64000}], 'stickers': [], 'presences': [], 'explicit_content_filter': 0, 'premium_tier': 0, 'system_channel_flags': 0}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event guild_available
+DEBUG:discord.client:Dispatching event ready
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 3, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2022-06-23T19:18:23.936000+00:00', 'referenced_message': None, 'pinned': False, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['988919111901929566'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2022-06-21T21:31:29.660000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}, 'id': '989610393724915753', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'BoBOT is connected ! Tape **!help** for more informations', 'components': [], 'channel_id': '986278767473336373', 'author': {'username': 'BoBOT', 'public_flags': 0, 'id': '988915244409688074', 'discriminator': '7447', 'bot': True, 'avatar_decoration': None, 'avatar': 'f6047ed12749496a7ddf04e3ef6cc5e2'}, 'attachments': [], 'guild_id': '986278767473336370'}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event message
+DEBUG:discord.http:POST https://discord.com/api/v7/channels/986278767473336373/messages with {"content":"BoBOT is connected ! Tape **!help** for more informations"} has returned 200
+DEBUG:discord.http:POST https://discord.com/api/v7/channels/986278767473336373/messages has received {'id': '989610393724915753', 'type': 0, 'content': 'BoBOT is connected ! Tape **!help** for more informations', 'channel_id': '986278767473336373', 'author': {'id': '988915244409688074', 'username': 'BoBOT', 'avatar': 'f6047ed12749496a7ddf04e3ef6cc5e2', 'avatar_decoration': None, 'discriminator': '7447', 'public_flags': 0, 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2022-06-23T19:18:23.936000+00:00', 'edited_timestamp': None, 'flags': 0, 'components': [], 'referenced_message': None}
+INFO:root:BOT is connected
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 4, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2022-06-23T19:18:42.916000+00:00', 'referenced_message': None, 'pinned': False, 'nonce': '989610467380953088', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2022-06-14T14:39:42.352000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}, 'id': '989610473332801566', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '!iplocation 8.8.8.8 127.0.0.1:8000', 'components': [], 'channel_id': '986278767473336373', 'author': {'username': 'Flamma', 'public_flags': 0, 'id': '426456090574848002', 'discriminator': '3939', 'avatar_decoration': None, 'avatar': '3107722d30ea03e15e734d0e10e48bf1'}, 'attachments': [], 'guild_id': '986278767473336370'}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event message
+INFO:root:Traitement de la commande !iplocation
+INFO:root:Traitement de la requete shodan
+INFO:root:connexion a api shodan via apikey
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.shodan.io:443
+DEBUG:urllib3.connectionpool:https://api.shodan.io:443 "GET /shodan/host/8.8.8.8?key=ttIZacJo0FkHUDDzuLimF8ku48YAXHzP HTTP/1.1" 200 None
+INFO:root:recherche sur shodan avec ip
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 5, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2022-06-23T19:18:43.647000+00:00', 'referenced_message': None, 'pinned': False, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['988919111901929566'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2022-06-21T21:31:29.660000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}, 'id': '989610476398850158', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'https://www.openstreetmap.org/?mlat=37.4056&mlon=-122.0775#map=12', 'components': [], 'channel_id': '986278767473336373', 'author': {'username': 'BoBOT', 'public_flags': 0, 'id': '988915244409688074', 'discriminator': '7447', 'bot': True, 'avatar_decoration': None, 'avatar': 'f6047ed12749496a7ddf04e3ef6cc5e2'}, 'attachments': [], 'guild_id': '986278767473336370'}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event message
+DEBUG:discord.http:POST https://discord.com/api/v7/channels/986278767473336373/messages with {"content":"https://www.openstreetmap.org/?mlat=37.4056&mlon=-122.0775#map=12"} has returned 200
+DEBUG:discord.http:POST https://discord.com/api/v7/channels/986278767473336373/messages has received {'id': '989610476398850158', 'type': 0, 'content': 'https://www.openstreetmap.org/?mlat=37.4056&mlon=-122.0775#map=12', 'channel_id': '986278767473336373', 'author': {'id': '988915244409688074', 'username': 'BoBOT', 'avatar': 'f6047ed12749496a7ddf04e3ef6cc5e2', 'avatar_decoration': None, 'discriminator': '7447', 'public_flags': 0, 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2022-06-23T19:18:43.647000+00:00', 'edited_timestamp': None, 'flags': 0, 'components': [], 'referenced_message': None}
+INFO:root:Traitement de la commande !iplocation terminé
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': 'MESSAGE_UPDATE', 's': 6, 'op': 0, 'd': {'id': '989610476398850158', 'embeds': [{'url': 'https://www.openstreetmap.org/?mlat=37.4056&mlon=-122.0775', 'type': 'link', 'title': 'OpenStreetMap', 'thumbnail': {'width': 256, 'url': 'https://www.openstreetmap.org/assets/osm_logo_256-ed028f90468224a272961c380ecee0cfb73b8048b34f4b4b204b7f0d1097875d.png', 'proxy_url': 'https://images-ext-1.discordapp.net/external/HS_LoZoMqAzGeQG0CnO64WB4Cn6-WhgRfz_6lkPDX7A/https/www.openstreetmap.org/assets/osm_logo_256-ed028f90468224a272961c380ecee0cfb73b8048b34f4b4b204b7f0d1097875d.png', 'height': 256}, 'provider': {'name': 'OpenStreetMap'}, 'description': 'OpenStreetMap is a map of the world, created by people like you and free to use under an open license.', 'color': 16777215}], 'channel_id': '986278767473336373', 'guild_id': '986278767473336370'}}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event raw_message_edit
+DEBUG:discord.client:Dispatching event message_edit
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.gateway:Keeping shard ID None websocket alive with sequence 6.
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.gateway:For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.client:Received signal to terminate bot and event loop.
+INFO:discord.client:Cleaning up tasks.
+INFO:discord.client:Cleaning up after 1 tasks.
+INFO:discord.client:All tasks finished cancelling.
+INFO:discord.client:Closing the event loop.
+INFO:root:Lancement du BOT
